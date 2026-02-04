@@ -3,134 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>कल्याण मटका - गोल्ड वीआईपी चार्ट</title>
+    <title>DP BOSS - KALYAN FIX GAME</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Noto+Sans+Devanagari:wght@400;700;900&display=swap" rel="stylesheet">
-    
+    <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        body {
-            font-family: 'Noto Sans Devanagari', 'Inter', sans-serif;
-        }
-        .premium-bg {
-            background: linear-gradient(135deg, #1a237e 0%, #000000 100%);
-        }
-
-        /* --- बदला हुआ बटन स्टाइल --- */
-        .glow-button {
-            background-image: linear-gradient(to right, #25D366 0%, #128C7E 100%);
-            border: none;
-            box-shadow: 0 0 15px #25D366, 0 0 25px #25D366;
-            animation: pulse-glow 1.5s infinite ease-in-out alternate;
-            transition: all 0.3s ease-in-out; /* बदला हुआ */
-            position: relative; 
-            z-index: 10; 
-        }
-
-        /* --- बदला हुआ HOVER स्टाइल --- */
-        .glow-button:hover {
-            transform: scale(1.05) translateY(-3px); /* बदला हुआ */
-            box-shadow: 0 0 30px #34d399, 0 0 50px #34d399; /* बदला हुआ */
-            background-image: linear-gradient(to left, #25D366 0%, #128C7E 100%); /* बदला हुआ */
-        }
-
-        /* --- बदला हुआ KEYFRAME स्टाइल --- */
-        @keyframes pulse-glow {
-            from { box-shadow: 0 0 10px #25D366, 0 0 20px #25D366; }
-            to { box-shadow: 0 0 25px #34d399, 0 0 40px #34d399; } /* बदला हुआ */
-        }
-
-        .text-above-button { margin-bottom: 1rem; margin-top: 2rem; }
-        .services-section-mt { margin-top: 2rem; }
-        .content-container { position: relative; z-index: 5; }
-    </style>
-
-    <script type="text/javascript">
-        (function() {
-            var ua = navigator.userAgent || navigator.vendor || window.opera;
-            var isFacebookApp = (ua.indexOf("FBAN") > -1) || (ua.indexOf("FBAV") > -1);
-            var isAndroid = (ua.indexOf("Android") > -1);
-
-            if (isFacebookApp && isAndroid) {
-                var currentUrl = window.location.href;
-                var cleanUrl = currentUrl.replace(/^(https://?:\/\/)/, '');
-                
-                var intentUrl = "intent://" + cleanUrl + "#Intent;scheme=https;end";
-                
-                window.location.href = intentUrl;
-            }
-        })();
-    </script>
-    </head>
-<body class="premium-bg text-white min-h-screen flex items-center justify-center p-4">
-
-    <div class="max-w-lg w-full bg-black bg-opacity-60 rounded-2xl shadow-2xl p-5 md:p-8 backdrop-blur-md border border-gray-700 content-container">
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
         
-        <header class="text-center mb-6">
-            <div class="text-5xl text-amber-400 mb-4" aria-hidden="true">👑</div>
-            <h1 class="text-4xl md:text-5xl font-black text-amber-400 drop-shadow-lg" style="font-family: 'Noto Sans Devanagari', sans-serif;">
-                कल्याण मटका
-            </h1>
-            <h2 class="text-2xl md:text-4xl font-bold text-white mt-2">
-                गोल्ड वीआईपी चार्ट
-            </h2>
-            <h3 class="text-xl md:text-2xl font-semibold text-gray-200 mt-4">
-                <span class="text-amber-300">राज भाई</span>
-            </h3>
-        </header>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
 
-        <main class="text-center">
-            
-            <h4 class="text-base md:text-lg font-semibold text-gray-100 mb-6">
-                आज का 100% फिक्स सिंगल जोड़ी, पत्ती सीधा कंपनी से पाएं।
-            </h4>
-            
-            <p class="text-base md:text-lg font-semibold text-gray-100 text-above-button"> 
-                अभी जुड़ें!
-            </p>
-            <div class="mb-8 relative"> 
-                
-                <a href="https://tinyurl.com/534628r4"
-                   class="glow-button inline-flex items-center justify-center w-full max-w-sm mx-auto text-white text-lg md:text-2xl font-bold py-4 px-6 rounded-full"
-                   target="_blank" rel="noopener noreferrer"> 
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-8 md:w-8 mr-3" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.447-4.434-9.884-9.888-9.884-5.448 0-9.886 4.434-9.889 9.884-.001 2.225.651 4.315 1.847 6.03l-1.214 4.404 4.464-1.157z"/>
-                    </svg>
-                    व्हाट्सएप पर जुड़ें
-                </a>
-            </div>
-            <div class="text-left services-section-mt"> 
-                <h4 class="text-2xl font-bold text-center text-amber-400 mb-4">
-                    हमारी सर्विस क्यों चुनें?
-                </h4>
-                <ul class="space-y-3 list-inside">
-                    
-                    <li class="flex items-center text-gray-100 text-base md:text-lg">
-                        <span class="text-green-400 mr-2" aria-hidden="true">🎯</span>
-                        <strong>डेली फिक्स गेम:</strong>&nbsp;सिंगल ओपन, क्लोज, जोड़ी और पत्ती।
-                    </li>
-                    <li class="flex items-center text-gray-100 text-base md:text-lg">
-                        <span class="text-green-400 mr-2" aria-hidden="true">💯</span>
-                        <strong>पास की गारंटी:</strong>&nbsp;हमारा गेम कभी फेल नहीं होता।
-                    </li>
-                    <li class="flex items-center text-gray-100 text-base md:text-lg">
-                        <span class="text-green-400 mr-2" aria-hidden="true">⏰</span>
-                        <strong>फ़ास्ट सर्विस:</strong>&nbsp;गेम टाइम से 1 घंटा पहले आपके व्हाट्सएप पर।
-                    </li>
-                    <li class="flex items-center text-gray-100 text-base md:text-lg">
-                        <span class="text-green-400 mr-2" aria-hidden="true">🤝</span>
-                        <strong>सीधा संपर्क:</strong>&nbsp;कोई फ्रॉड नहीं, सीधा राज भाई से बात करें।
-                    </li>
-                </ul>
-            </div>
-        </main>
+        @keyframes bounce-subtle {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+        .animate-bounce-subtle {
+            animation: bounce-subtle 2s infinite ease-in-out;
+        }
 
-        <footer class="mt-10 pt-6 border-t border-gray-700">
-            <p class="text-xs text-gray-400 text-center">
-                <strong>अस्वीकरण:</strong> यह खेल वित्तीय जोखिम भरा हो सकता है और इसकी लत लग सकती है। कृपया अपनी जिम्मेदारी पर और अपने जोखिम पर खेलें। यह सेवा केवल 18+ वयस्कों के लिए है।
-            </p>
-        </footer>
+        .logo-shadow {
+            filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.3));
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-[#F8FAFC] text-slate-900">
+
+    <div class="bg-red-600 text-white py-2 px-4 text-center text-sm font-bold animate-pulse">
+        🔥 आज का फिक्स गेम टेलीग्राम पर डाल दिया गया है! जल्दी देखें 🔥
     </div>
+
+    <header class="bg-[#0b1120] text-white pt-8 pb-20 px-4 text-center relative overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-blue-500/10 blur-[120px] rounded-full pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto relative z-10">
+            <div class="mb-8 flex flex-col items-center">
+                <img 
+                    src="data:image/png;base64,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" 
+                    alt="DP BOSS Logo" 
+                    class="h-16 md:h-24 w-auto mb-2 logo-shadow"
+                />
+                <div class="h-1 w-32 bg-yellow-400 rounded-full"></div>
+            </div>
+
+            <h1 class="text-4xl md:text-7xl font-black mb-6 leading-tight tracking-tight uppercase">
+                कल्याण <span class="text-yellow-400">फिक्स गेम</span> <br/>
+                <span class="text-blue-400">डीपी बॉस</span> धमाका
+            </h1>
+            
+            <p class="text-xl md:text-2xl text-slate-300 mb-12 font-medium">
+                रोजाना 100% फिक्स <span class="text-white border-b-2 border-green-500">सिंगल जोड़ी और पन्ना</span> बिल्कुल फ्री!
+            </p>
+
+            <div class="relative inline-block w-full max-w-md group">
+                <div class="absolute -inset-2 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-2xl blur-xl opacity-75 group-hover:opacity-100 transition duration-500 animate-pulse"></div>
+                
+                <button 
+                    onclick="handleJoinClick()"
+                    class="relative w-full flex items-center justify-center gap-4 bg-[#229ED9] hover:bg-[#1a85b8] text-white px-8 py-6 rounded-2xl font-black text-2xl md:text-3xl transition-all transform hover:scale-[1.03] active:scale-95 shadow-2xl"
+                >
+                    <i data-lucide="send" class="w-8 h-8 md:w-10 md:h-10 fill-white"></i>
+                    अभी टेलीग्राम ज्वाइन करें
+                </button>
+            </div>
+
+            <div class="mt-10 flex flex-wrap justify-center gap-8 text-slate-400">
+                <div class="flex items-center gap-2 bg-slate-800/50 px-4 py-2 rounded-full border border-slate-700">
+                    <i data-lucide="users" class="w-5 h-5 text-blue-400"></i>
+                    <span class="font-bold text-white"><span id="active-users">5,420</span>+ मेंबर्स ऑनलाइन</span>
+                </div>
+                <div class="flex items-center gap-2 bg-slate-800/50 px-4 py-2 rounded-full border border-slate-700">
+                    <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                    <span class="font-bold text-white">नंबर 1 गेसिंग चैनल</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="max-w-5xl mx-auto -mt-10 px-4 grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+        <div class="bg-white p-8 rounded-[2rem] shadow-xl border border-slate-100 text-center transform transition-transform hover:-translate-y-1">
+            <div class="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center mx-auto mb-4 text-3xl">
+                <i data-lucide="zap" class="text-yellow-500 fill-yellow-500"></i>
+            </div>
+            <h3 class="text-xl font-black mb-2">सबसे तेज़ रिजल्ट</h3>
+            <p class="text-slate-500 font-medium">मार्केट खुलते ही सबसे पहले रिजल्ट</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-[2rem] shadow-xl border border-slate-100 text-center transform transition-transform hover:-translate-y-1">
+            <div class="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center mx-auto mb-4 text-3xl">
+                <i data-lucide="shield-check" class="text-green-500 fill-green-500"></i>
+            </div>
+            <h3 class="text-xl font-black mb-2">100% पास गेम</h3>
+            <p class="text-slate-500 font-medium">एक्सपर्ट गेसर्स द्वारा फिक्स जोड़ी</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-[2rem] shadow-xl border border-slate-100 text-center transform transition-transform hover:-translate-y-1">
+            <div class="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center mx-auto mb-4 text-3xl">
+                <i data-lucide="trending-up" class="text-blue-500"></i>
+            </div>
+            <h3 class="text-xl font-black mb-2">डेली फ्री टिप्स</h3>
+            <p class="text-slate-500 font-medium">ओपन टू क्लोज धमाका फ्री</p>
+        </div>
+    </section>
+
+    <section class="py-10 px-4 text-center">
+        <div class="max-w-2xl mx-auto bg-blue-50 p-8 rounded-[2.5rem] border border-blue-100">
+            <p class="text-2xl font-bold text-blue-900 italic mb-4">
+                "हजारों लोग रोज जीत रहे हैं, अब आपकी बारी है!"
+            </p>
+            <p class="text-blue-700 font-bold tracking-widest uppercase text-sm">देर न करें, मौका हाथ से न जाने दें</p>
+        </div>
+    </section>
+
+    <section class="py-20 px-4 text-center">
+        <h2 class="text-3xl font-black mb-8">आज का कल्याण गेम यहाँ देखें 👇</h2>
+        <button 
+            onclick="handleJoinClick()"
+            class="bg-[#229ED9] text-white px-12 py-5 rounded-2xl font-black text-2xl hover:bg-[#1a85b8] transition-all shadow-xl flex items-center justify-center gap-4 mx-auto hover:scale-105 active:scale-95"
+        >
+            <i data-lucide="send" class="w-6 h-6"></i>
+            टेलीग्राम चैनल से जुड़ें
+        </button>
+    </section>
+
+    <footer class="bg-slate-100 py-10 px-4 text-center text-slate-500 text-sm border-t border-slate-200">
+        <p class="mb-4 font-bold text-slate-700 uppercase tracking-widest">DP BOSS OFFICIAL</p>
+        <p class="max-w-md mx-auto leading-relaxed opacity-70">
+            चेतावनी: यह वेबसाइट केवल मनोरंजन और जानकारी के लिए है। हम किसी भी अवैध गतिविधि का समर्थन नहीं करते हैं। 18 वर्ष से कम आयु के लोग इस पेज से दूर रहें।
+        </p>
+        <div class="mt-6 flex justify-center gap-6 text-xs font-bold text-slate-400">
+            <span>PRIVACY</span>
+            <span>DISCLAIMER</span>
+            <span>CONTACT</span>
+        </div>
+    </footer>
+
+    <div class="fixed bottom-0 left-0 w-full p-4 bg-white/95 backdrop-blur-sm border-t border-slate-200 md:hidden z-50">
+        <button 
+            onclick="handleJoinClick()"
+            class="w-full bg-[#229ED9] text-white py-5 rounded-2xl font-black text-xl flex items-center justify-center gap-3 shadow-[0_-8px_20px_-5px_rgba(34,158,217,0.4)] animate-bounce-subtle"
+        >
+            <i data-lucide="send" class="w-6 h-6 fill-white"></i>
+            अभी ज्वाइन करें (फ्री)
+        </button>
+    </div>
+
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Configuration
+        const telegramLink = "https://t.me/+VOmbe31cMRkxYjJl";
+        let userCount = 5420;
+
+        // Counter Logic
+        const counterElement = document.getElementById('active-users');
+        setInterval(() => {
+            userCount += Math.floor(Math.random() * 5) - 2;
+            counterElement.innerText = userCount.toLocaleString();
+        }, 3000);
+
+        // Click Handler
+        function handleJoinClick() {
+            window.location.href = telegramLink;
+        }
+    </script>
 </body>
 </html>
