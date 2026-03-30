@@ -15,7 +15,7 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1740275963260634');
+    fbq('init', '1437317113977198');
     fbq('track', 'PageView');
     </script>
     <!-- End Meta Pixel Code -->
@@ -45,7 +45,7 @@
 <body class="min-h-screen bg-[#F8FAFC] text-slate-900">
     <!-- Meta Pixel Code (Noscript) -->
     <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1740275963260634&ev=PageView&noscript=1"
+    src="https://www.facebook.com/tr?id=1437317113977198&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
 
@@ -180,7 +180,9 @@
         const counterElement = document.getElementById('active-users');
         setInterval(() => {
             userCount += Math.floor(Math.random() * 5) - 2;
-            counterElement.innerText = userCount.toLocaleString();
+            if (counterElement) {
+                counterElement.innerText = userCount.toLocaleString();
+            }
         }, 3000);
 
         // Click Handler
